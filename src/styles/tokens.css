@@ -1,0 +1,30 @@
+:root {
+  --color-background: #0b0b0d;
+  --color-text: #f5f2eb;
+  --color-burgundy: #4a1124;
+  --color-bronze: #a97142;
+  --color-muted: #aaa59e;
+  --color-line: #302d2b;
+  --font-display: 'Italiana', Georgia, serif;
+  --font-body: 'Manrope', Arial, sans-serif;
+  --text-small: clamp(0.6875rem, 0.65rem + 0.15vw, 0.8125rem);
+  --text-body: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  --text-display: clamp(2rem, 1.3rem + 2.5vw, 3.75rem);
+  --text-section: clamp(2.75rem, 1.4rem + 4vw, 5.5rem);
+  --text-hero: clamp(3.5rem, 18.2vw, 17rem);
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: clamp(2rem, 5vw, 4rem);
+  --space-6: clamp(4rem, 9vw, 8rem);
+  --space-section: clamp(5rem, 12vw, 11rem);
+  --gutter: clamp(1.25rem, 4.5vw, 5rem);
+  --container-width: 1440px;
+  --nav-offset: 7rem;
+  --transition-fast: 180ms ease;
+  --transition-base: 300ms ease;
+  --z-base: 0;
+  --z-nav: 10;
+  --z-skip: 20;
+}
