@@ -50,7 +50,9 @@
   letter-spacing: -0.035em;
   text-align: center;
 }
-.hero-visual { flex: 1; min-height: clamp(8rem, 20vh, 20rem); }
+.hero-visual { position: relative; flex: 1; min-height: clamp(8rem, 20vh, 20rem); }
+.hero-canvas { position: absolute; inset: 0; pointer-events: none; }
+.hero-canvas canvas { pointer-events: none; }
 .hero-bottom { display: grid; grid-template-columns: 1fr 2fr 1fr; align-items: end; gap: var(--space-4); }
 .hero-statement { text-align: center; }
 .hero-statement .display span { color: var(--color-muted); }

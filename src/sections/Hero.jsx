@@ -1,3 +1,8 @@
+import { lazy, Suspense } from 'react'
+import SceneBoundary from '../three/SceneBoundary'
+
+const HeroCanvas = lazy(() => import('../three/HeroCanvas'))
+
 export default function Hero() {
   return (
     <section className="container hero" id="home" aria-labelledby="hero-title">
@@ -6,8 +11,13 @@ export default function Hero() {
         <span className="hero-edition">An independent perspective</span>
       </div>
       <h1 className="hero-title" id="hero-title">MEGANA</h1>
-      {/* Reserved for the future interactive 3D scene. */}
-      <div className="hero-visual" aria-hidden="true" />
+      <div className="hero-visual" aria-hidden="true">
+        <SceneBoundary>
+          <Suspense fallback={null}>
+            <HeroCanvas />
+          </Suspense>
+        </SceneBoundary>
+      </div>
       <div className="hero-bottom">
         <a className="scroll-link eyebrow" href="#about">
           <span className="scroll-line" aria-hidden="true" />
